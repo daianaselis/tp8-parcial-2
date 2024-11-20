@@ -125,7 +125,9 @@ if archivo is not None:
 
                     
                     ax1.legend()
-                    plt.xticks(rotation=90)
+                    tick_positions = range(0, len(data), 12)  # Índices de las etiquetas
+                    tick_labels = data["Año"].iloc[tick_positions]  # Etiquetas en esas posiciones
+                    plt.xticks(tick_positions, tick_labels)
                     st.pyplot(plt)
             
     def mostrar_informacion_alumno():
