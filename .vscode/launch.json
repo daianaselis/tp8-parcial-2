@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Streamlit App",
+        "type": "python",
+        "request": "launch",
+        "program": "/home/daiana/.local/bin/streamlit",  // Adjust if you're not using a virtual environment
+        "args": [
+          "run",
+          "tp8-parcial-2-resuelto.py"  // Replace with your Streamlit app filename
+        ],
+        "console": "integratedTerminal",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        },
+        "justMyCode": true
+      }
+    ]
+  }
+  
